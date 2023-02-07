@@ -1,7 +1,8 @@
-﻿// Austin Hyer
-// 1-30-23
-// IS 413
-// Mission #4
+﻿/*Austin Hyer
+    2-6-22
+    IS 413
+    Mission #5
+*/
 
 //This function listens for the button on the form to be clicked and calculates the total score and letter grade for the user.
 $("#btn").click(function () {
@@ -55,4 +56,4 @@ $("#btn").click(function () {
 
     //Returns the user's total score and letter grade at the end of the form.
     $('#grade').html("You scored " + total + "% in this class! " + "Your letter grade is: " + letterGrade)
-})
+}

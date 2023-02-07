@@ -1,0 +1,42 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Calc";
+}
+
+@model CalcModel;
+<!--Austin Hyer
+    2-6-23
+    IS 413
+    Mission #5
+-->
+
+<link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="~/css/default.css" rel="stylesheet" />
+<link href="~/img/BYU.png" rel="shortcut icon" />
+
+<!--Grade calculator form. Values are passed to the model and js for processing-->
+<h1>Grade Calculator</h1>
+<h6>Input percentage value for each section WITHOUT the "%" sign. ie: 83</h6>
+<form method="post">
+    <label>Assignments:</label>
+    <input id="assignments" type="number" asp-for="Assignments" /> <br />
+    <label>Group Project:</label>
+    <input id="group_project" type="number" asp-for="Group_project" /> <br />
+    <label>Quizzes:</label>
+    <input id="quizzes" type="number" asp-for="Quizzes" /> <br />
+    <label>Midterm Exam:</label>
+    <input id="midterm_exam" type="number" asp-for="Midterm_exam" /> <br />
+    <label>Final Exam:</label>
+    <input id="final_exam" type="number" asp-for="Final_exam" /> <br />
+    <label>INTEX:</label>
+    <input id="intex" type="number" asp-for="Intex" /> <br />
+    <input id="btn" type="submit" value="Calculate" />
+    <label id="grade"></label>
+    <div asp-validation-summary="All"></div>
+</form>
+
+<script src="~/jquery/jquery-3.6.3.min.js"></script>
+<script src="~/js/Calculator.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>

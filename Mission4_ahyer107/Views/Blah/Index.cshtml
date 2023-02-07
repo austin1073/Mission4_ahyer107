@@ -1,0 +1,63 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    ViewData["Title"] = "Austin Hyer's Homepage";
+}
+
+<!--Austin Hyer
+    2-6-23
+    IS 413
+    Mission #5
+-->
+
+<!--My preferred name.-->
+<h1>Austin Hyer</h1>
+
+<!--Picture of my friends and I at a BYU football game. Width and height is set to fit the screen better.-->
+<img src="img/austinFriends.JPG"
+        width="1000"
+        height="500" />
+
+<!--Paragraph about myself and my goals for the class this semester.-->
+<p>
+    This semester at BYU I am taking IS 413. I hope to understand how to better build apps and dynamic webpages in the ASP.NET framework. I hope to be able to understand the
+    working peices of the framework and be able to use them together without needing to follow along with a video or guide. I also hope to grew closer to my team and become a better
+    team mate that isn't afraid to take responsible in stride.
+</p>
+<br />
+
+<!--Ordered list of my top three dream jobs.-->
+<h3>My top three dream jobs:</h3>
+<ol>
+    <li>Tech consultant</li>
+    <li>Data analyst</li>
+    <li>Database Manager/Administrator</li>
+</ol>
+<br />
+<br />
+
+<!--Grade calculator form. All inputs are set to number so that if the user leaves a section blank the program assumes a score of 0.-->
+<h2>Grade Calculator</h2>
+<h6>Input percentage value for each section WITHOUT the "%" sign. ie: 83</h6>
+<form>
+    <label>Assignments:</label>
+    <input id="assignments" type="number" /> <br />
+    <label>Group Project:</label>
+    <input id="group_project" type="number" /> <br />
+    <label>Quizzes:</label>
+    <input id="quizzes" type="number" /> <br />
+    <label>Midterm Exam:</label>
+    <input id="midterm_exam" type="number" /> <br />
+    <label>Final Exam:</label>
+    <input id="final_exam" type="number" /> <br />
+    <label>INTEX:</label>
+    <input id="intex" type="number" /> <br />
+    <input id="btn" type="button" value="Calculate" />
+    <label id="grade"></label>
+</form>
+
+    <!--Plugging in the JS bootstrap, Jquery code and calculator function.-->
+    @*<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/jquery/jquery-3.6.3.min.js"></script>*@
+    <script src="js/Calculator.js"></script>
